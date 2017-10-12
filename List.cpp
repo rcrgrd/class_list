@@ -58,11 +58,11 @@ bool List<T>::PopBack(T &v){
 }
 
 template<typename T>
-List::~List(){
+List<T>::~List(){
 	if(first == 0)
 		return;
 	Node<T> *p = first;
-	while(p! = 0){
+	while(p != 0){
 		p=p->next;
 		delete first;
 		first = p;
