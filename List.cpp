@@ -1,6 +1,11 @@
 #include "List.h"
 #include "node.h"
-
+template <typename T>
+bool List<T>::empty() const{
+	if(first == 0)
+		return true;
+	return false;
+}
 template <typename T>
 void List<T>::PushFront(const T &v){
 	Node<T> *n = new Node<T>(v);
