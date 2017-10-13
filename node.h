@@ -4,6 +4,9 @@
 template <typename T>
 class List;
 
+template<typename T>
+std::ostream& operator<<(std::ostream&, const Node<T>&);
+
 template <typename T>
 class Node {
 
