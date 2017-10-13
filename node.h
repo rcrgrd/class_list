@@ -10,6 +10,11 @@ std::ostream& operator<<(std::ostream&, const Node<T>&);
 template <typename T>
 class Node {
 
+	friend std::ostream& operator<<(std::ostream&, const Node<T>&);
+
+9
+
+​
 friend class List<T>;
 
 private:
