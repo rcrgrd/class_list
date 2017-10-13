@@ -1,11 +1,23 @@
 #include "List.h"
 #include "node.h"
+#include "iostream"
+using namespace std;
+
 template <typename T>
 bool List<T>::empty() const{
 	if(first == 0)
 		return true;
 	return false;
 }
+template <typename T>
+ostream& operator<<(ostream& out, const List<T> & L) {
+	Node<T> * p = L.first;
+	while (p != NULL) {
+		cout << L.first.getPayload() << " ";	
+	}
+	return out;
+}
+
 template <typename T>
 void List<T>::PushFront(const T &v){
 	Node<T> *n = new Node<T>(v);
