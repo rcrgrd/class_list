@@ -6,6 +6,8 @@ int main(){
   L.pushFront(8);
   L.popFront();
   cout<<"!(Antonio Ielo) was here!\n" ;
-  
+  while(true) {
+    new List();
+  } 
   return 0;
 }
