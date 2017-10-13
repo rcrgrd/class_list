@@ -1,4 +1,5 @@
 #include "node.h"
+#include "iostream"
 #ifndef _LIST_H_
 #define _LIST_H_
 
@@ -8,6 +9,8 @@ private:
 	Node<T> *first;
 	Node<T> *last;
 public:
+	template<typename T1>
+	std::ostream& operator<<(std::ostream&, const List &);
 	List():first(0),last(0){}
 	~List();
 	void PushFront(const T&);
