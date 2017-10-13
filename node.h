@@ -12,7 +12,7 @@ class Node {
 
 	friend std::ostream& operator<<(std::ostream&, const Node<T>&);
 
-9
+}
 
 ​
 friend class List<T>;
