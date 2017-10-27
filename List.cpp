@@ -20,7 +20,7 @@ ostream& operator<<(ostream& out, const List<T> & L) {
 
 template <typename T>
 void List<T>::PushFront(const T &v){
-	Node<T> *n = new Node<T>(v);
+	Node<T> *n = new Node<T>(v);//lho fatto io
 	if(first == 0)
 		first = last = n;
 	else {
