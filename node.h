@@ -1,5 +1,5 @@
 #ifndef _NODE_H_
-#define _NODE_H_
+#define _NODE_H_//lho fatto io
 
 template <typename T>
 class List;
