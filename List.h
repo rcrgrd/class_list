@@ -1,5 +1,5 @@
 #include "node.h"
-#include "iostream"
+#include "iostream"//lho fatto io
 #ifndef _LIST_H_
 #define _LIST_H_
 
